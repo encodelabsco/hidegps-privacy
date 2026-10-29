@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HideGps — Política de privacidad / Privacy Policy</title>
+<meta name="description" content="Política de privacidad de la aplicación HideGps para Android, de Encode Labs Co.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1d1f23;
+    --muted: #5b6270;
+    --accent: #2e7d32;
+    --rule: #e3e6ea;
+    --box: #f4f7f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #121417;
+      --text: #e6e8eb;
+      --muted: #a2a9b4;
+      --accent: #81c784;
+      --rule: #2a2e34;
+      --box: #1a1f1b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 20px; margin-bottom: 8px; }
+  h1 { font-size: 1.9rem; line-height: 1.25; margin: 0 0 6px; }
+  h2 { font-size: 1.2rem; margin: 2.2em 0 .5em; color: var(--accent); }
+  h3 { font-size: 1rem; margin: 1.4em 0 .3em; }
+  p, li { margin: .4em 0; }
+  ul { padding-left: 1.3em; }
+  a { color: var(--accent); }
+  .meta { color: var(--muted); font-size: .95rem; margin: 0; }
+  .lang { margin: 16px 0 0; font-size: .95rem; }
+  .summary { background: var(--box); border: 1px solid var(--rule); border-radius: 10px; padding: 14px 18px; margin: 20px 0; }
+  .summary p { margin: .3em 0; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; font-size: .93rem; margin: .8em 0; }
+  th, td { text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); padding: 8px 10px 8px 0; }
+  th { color: var(--muted); font-weight: 600; }
+  hr { border: 0; border-top: 2px solid var(--rule); margin: 56px 0 8px; }
+  footer { color: var(--muted); font-size: .9rem; margin-top: 40px; }
+</style>
+</head>
+<body>
+<main>
+
+<!-- ====================================================================== -->
+<!-- ESPAÑOL                                                                 -->
+<!-- ====================================================================== -->
+<article id="es" lang="es">
+  <header>
+    <h1>Política de privacidad de HideGps</h1>
+    <p class="meta">Responsable: Encode Labs Co · Contacto: <a href="mailto:encodelabsco@gmail.com">encodelabsco@gmail.com</a></p>
+    <p class="meta">Fecha de entrada en vigor: 28 de octubre de 2026</p>
+    <p class="lang">Español · <a href="#en">English version</a></p>
+  </header>
+
+  <div class="summary">
+    <p><strong>En resumen:</strong> HideGps no tiene cuentas de usuario, publicidad ni herramientas de analítica, y Encode Labs Co no opera servidores que reciban tus datos. Tu ubicación real y tus datos de actividad física se procesan en tu dispositivo. Para mostrar mapas, buscar direcciones y trazar rutas, la app se conecta directamente con servicios públicos de OpenStreetMap, que reciben la información técnica mínima necesaria para responder.</p>
+  </div>
+
+  <h2>1. Quiénes somos</h2>
+  <p>HideGps (paquete <code>com.ylabs.hidegps</code>) es una aplicación para Android que simula la ubicación GPS del dispositivo, destinada a pruebas de desarrollo de software, protección de la privacidad y evaluación de aplicaciones que dependen de la ubicación. El responsable del tratamiento es Encode Labs Co, con domicilio en Colombia.</p>
+
+  <h2>2. Datos que la app utiliza y para qué</h2>
+
+  <h3>2.1 Ubicación precisa y aproximada</h3>
+  <p>Con tu permiso (<em>ACCESS_FINE_LOCATION</em> y <em>ACCESS_COARSE_LOCATION</em>), la app lee tu ubicación real únicamente para:</p>
+  <ul>
+    <li>Centrar el mapa en tu posición la primera vez que abres la app y cuando pulsas el botón de “mi ubicación”.</li>
+    <li>En el <strong>Modo Distancia Segura</strong>, tomar una única vez tu posición real como punto de referencia oculto a partir del cual se calculan ubicaciones simuladas alejadas. Ese punto nunca se muestra en pantalla ni se entrega a otras apps.</li>
+  </ul>
+  <p>Para leer la ubicación, Android utiliza el proveedor de ubicación de Google Play services, que se rige por la <a href="https://policies.google.com/privacy">Política de privacidad de Google</a>. Encode Labs Co no recibe tu ubicación real.</p>
+
+  <h3>2.2 Actividad física y sensores de movimiento</h3>
+  <p>Solo si activas el <strong>Modo Espejo</strong> y concedes el permiso de actividad física (<em>ACTIVITY_RECOGNITION</em>), la app usa el detector de pasos del dispositivo para replicar tu desplazamiento sobre el lugar elegido. En los modos Estático y Espejo también lee la brújula del dispositivo, para que la ubicación simulada tenga la misma orientación que tu teléfono. Estos datos se procesan en memoria mientras el modo está activo, no se guardan y no salen del dispositivo.</p>
+
+  <h3>2.3 Datos que guardas en la app</h3>
+  <p>Se almacenan solo en tu dispositivo:</p>
+  <ul>
+    <li>Los lugares y rutas que decides guardar (nombre y coordenadas).</li>
+    <li>Tus ajustes (idioma, unidades, tema, tipo de mapa, precisión) y la última ubicación seleccionada en el mapa, para recuperarla al volver a abrir la app.</li>
+    <li>Los parámetros del modo de simulación activo, para reanudarlo si el sistema reinicia el servicio. Se borran al detener la simulación.</li>
+  </ul>
+  <p>La app desactiva la copia de seguridad automática de Android, por lo que estos datos no se copian a tu cuenta de Google.</p>
+
+  <h3>2.4 Notificaciones</h3>
+  <p>El permiso de notificaciones se usa para mostrar la notificación permanente que indica que la simulación está activa y permite detenerla. No se envían notificaciones promocionales.</p>
+
+  <h3>2.5 Ubicación simulada que reciben otras apps</h3>
+  <p>La función principal de HideGps es entregar al sistema una ubicación simulada que tú eliges. Las demás apps instaladas reciben esa ubicación simulada a través de Android, según los permisos que tú les hayas concedido. HideGps no envía datos a esas apps por ningún otro medio.</p>
+
+  <h2>3. Servicios de terceros a los que se conecta la app</h2>
+  <p>Para ofrecer mapas, búsqueda y rutas, la app se conecta por HTTPS directamente desde tu dispositivo con los servicios que se indican a continuación. Como en cualquier conexión a internet, estos servicios reciben tu dirección IP y un identificador de la app (<em>User-Agent</em>) junto con la información de cada solicitud:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Servicio</th><th>Cuándo se usa</th><th>Qué recibe</th></tr></thead>
+    <tbody>
+      <tr><td>Servidores de mapas de OpenStreetMap y OpenTopoMap</td><td>Al mostrar el mapa</td><td>Las cuadrículas del mapa que estás viendo, lo que permite deducir la zona visualizada</td></tr>
+      <tr><td>Nominatim (búsqueda de OpenStreetMap)</td><td>Al buscar un lugar</td><td>El texto que escribes en el buscador</td></tr>
+      <tr><td>OSRM (cálculo de rutas)</td><td>En Modo Ruta y Modo Espejo</td><td>Los puntos de la ruta que marcas o la posición simulada que se ajusta a la vía más cercana</td></tr>
+      <tr><td>Google Play services</td><td>Al leer tu ubicación real (punto 2.1)</td><td>Lo que Google procesa según su propia política</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>Estos servicios tienen sus propias políticas: <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation</a>, <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://project-osrm.org/">OSRM</a> y <a href="https://policies.google.com/privacy">Google</a>.</p>
+
+  <h2>4. Lo que la app no hace</h2>
+  <ul>
+    <li>No requiere cuenta ni registro.</li>
+    <li>No muestra publicidad ni incluye SDK de publicidad.</li>
+    <li>No incluye herramientas de analítica ni de seguimiento.</li>
+    <li>No vende ni comparte datos personales con fines comerciales.</li>
+    <li>No envía datos a servidores de Encode Labs Co.</li>
+    <li>No accede a tu ubicación en segundo plano fuera del servicio de simulación que tú activas, que muestra una notificación visible mientras funciona.</li>
+  </ul>
+
+  <h2>5. Conservación y eliminación</h2>
+  <p>Los datos permanecen en tu dispositivo hasta que los eliminas. Puedes borrar lugares y rutas desde la propia app, borrar todos los datos desde <em>Ajustes de Android › Aplicaciones › HideGps › Almacenamiento › Borrar datos</em>, o desinstalar la app, lo que elimina todo su contenido. Puedes revocar los permisos en cualquier momento desde los ajustes de Android.</p>
+
+  <h2>6. Seguridad</h2>
+  <p>Las conexiones con los servicios externos usan HTTPS. Los datos locales se guardan en el almacenamiento privado de la app, al que otras apps no pueden acceder.</p>
+
+  <h2>7. Menores de edad</h2>
+  <p>HideGps está dirigida a personas mayores de 18 años y no está diseñada para niños. No recopilamos de forma consciente datos de menores.</p>
+
+  <h2>8. Tus derechos (Ley 1581 de 2012, Colombia)</h2>
+  <p>De acuerdo con la Ley 1581 de 2012 y sus decretos reglamentarios, tienes derecho a conocer, actualizar, rectificar y suprimir tus datos personales, a revocar la autorización otorgada y a presentar quejas ante la Superintendencia de Industria y Comercio. Como Encode Labs Co no almacena tus datos en sus propios sistemas, la mayoría de estos derechos los ejerces directamente desde tu dispositivo (punto 5). Para cualquier consulta o reclamo, escríbenos a <a href="mailto:encodelabsco@gmail.com">encodelabsco@gmail.com</a>; responderemos en los plazos que establece la ley.</p>
+
+  <h2>9. Cambios a esta política</h2>
+  <p>Si modificamos esta política, publicaremos la nueva versión en esta misma dirección con su fecha de entrada en vigor. Si el cambio es relevante, también lo informaremos dentro de la app.</p>
+
+  <h2>10. Contacto</h2>
+  <p>Encode Labs Co · <a href="mailto:encodelabsco@gmail.com">encodelabsco@gmail.com</a></p>
+</article>
+
+<hr>
+
+<!-- ====================================================================== -->
+<!-- ENGLISH                                                                 -->
+<!-- ====================================================================== -->
+<article id="en" lang="en">
+  <header>
+    <h1>HideGps Privacy Policy</h1>
+    <p class="meta">Controller: Encode Labs Co · Contact: <a href="mailto:encodelabsco@gmail.com">encodelabsco@gmail.com</a></p>
+    <p class="meta">Effective date: October 28, 2026</p>
+    <p class="lang"><a href="#es">Versión en español</a> · English</p>
+  </header>
+
+  <div class="summary">
+    <p><strong>In short:</strong> HideGps has no user accounts, ads, or analytics, and Encode Labs Co does not operate servers that receive your data. Your real location and physical activity data are processed on your device. To display maps, search addresses, and calculate routes, the app connects directly to public OpenStreetMap services, which receive the minimum technical information needed to respond.</p>
+  </div>
+
+  <h2>1. Who we are</h2>
+  <p>HideGps (package <code>com.ylabs.hidegps</code>) is an Android app that simulates the device's GPS location, intended for software development testing, privacy protection, and evaluating location-dependent apps. The data controller is Encode Labs Co, based in Colombia.</p>
+
+  <h2>2. Data the app uses and why</h2>
+
+  <h3>2.1 Precise and approximate location</h3>
+  <p>With your permission (<em>ACCESS_FINE_LOCATION</em> and <em>ACCESS_COARSE_LOCATION</em>), the app reads your real location only to:</p>
+  <ul>
+    <li>Center the map on your position the first time you open the app and when you tap the “my location” button.</li>
+    <li>In <strong>Safe Distance Mode</strong>, take your real position once as a hidden reference point from which distant simulated locations are calculated. That point is never shown on screen or provided to other apps.</li>
+  </ul>
+  <p>To read your location, Android uses the Google Play services location provider, governed by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>. Encode Labs Co does not receive your real location.</p>
+
+  <h3>2.2 Physical activity and motion sensors</h3>
+  <p>Only if you turn on <strong>Mirror Mode</strong> and grant the physical activity permission (<em>ACTIVITY_RECOGNITION</em>), the app uses the device's step detector to replicate your movement at the chosen place. In Static and Mirror modes it also reads the device compass, so the simulated location has the same heading as your phone. This data is processed in memory while the mode is active, is not stored, and never leaves the device.</p>
+
+  <h3>2.3 Data you save in the app</h3>
+  <p>Stored on your device only:</p>
+  <ul>
+    <li>Places and routes you choose to save (name and coordinates).</li>
+    <li>Your settings (language, units, theme, map type, precision) and the last location selected on the map, so it can be restored when you reopen the app.</li>
+    <li>The parameters of the active simulation mode, so it can resume if the system restarts the service. They are deleted when you stop the simulation.</li>
+  </ul>
+  <p>The app disables Android's automatic backup, so this data is not copied to your Google account.</p>
+
+  <h3>2.4 Notifications</h3>
+  <p>The notification permission is used to show the ongoing notification that indicates the simulation is active and lets you stop it. No promotional notifications are sent.</p>
+
+  <h3>2.5 Simulated location received by other apps</h3>
+  <p>HideGps's core function is to provide the system with a simulated location that you choose. Other installed apps receive that simulated location through Android, according to the permissions you have granted them. HideGps does not send data to those apps by any other means.</p>
+
+  <h2>3. Third-party services the app connects to</h2>
+  <p>To provide maps, search, and routing, the app connects over HTTPS directly from your device to the services below. As with any internet connection, these services receive your IP address and an app identifier (<em>User-Agent</em>) along with each request's content:</p>
+  <div class="table-wrap">
+  <table>
+    <thead><tr><th>Service</th><th>When it is used</th><th>What it receives</th></tr></thead>
+    <tbody>
+      <tr><td>OpenStreetMap and OpenTopoMap tile servers</td><td>When the map is displayed</td><td>The map tiles you are viewing, from which the viewed area can be inferred</td></tr>
+      <tr><td>Nominatim (OpenStreetMap search)</td><td>When you search for a place</td><td>The text you type in the search box</td></tr>
+      <tr><td>OSRM (routing)</td><td>In Route Mode and Mirror Mode</td><td>The route points you mark, or the simulated position being snapped to the nearest road</td></tr>
+      <tr><td>Google Play services</td><td>When reading your real location (section 2.1)</td><td>What Google processes under its own policy</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>These services have their own policies: <a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation</a>, <a href="https://opentopomap.org/about">OpenTopoMap</a>, <a href="https://project-osrm.org/">OSRM</a>, and <a href="https://policies.google.com/privacy">Google</a>.</p>
+
+  <h2>4. What the app does not do</h2>
+  <ul>
+    <li>It does not require an account or registration.</li>
+    <li>It does not show ads or include advertising SDKs.</li>
+    <li>It does not include analytics or tracking tools.</li>
+    <li>It does not sell or share personal data for commercial purposes.</li>
+    <li>It does not send data to Encode Labs Co servers.</li>
+    <li>It does not access your location in the background outside the simulation service you start, which displays a visible notification while running.</li>
+  </ul>
+
+  <h2>5. Retention and deletion</h2>
+  <p>Data stays on your device until you delete it. You can delete places and routes within the app, clear all data from <em>Android Settings › Apps › HideGps › Storage › Clear data</em>, or uninstall the app, which removes all of its content. You can revoke permissions at any time from Android settings.</p>
+
+  <h2>6. Security</h2>
+  <p>Connections to external services use HTTPS. Local data is stored in the app's private storage, which other apps cannot access.</p>
+
+  <h2>7. Children</h2>
+  <p>HideGps is intended for people aged 18 and over and is not designed for children. We do not knowingly collect data from minors.</p>
+
+  <h2>8. Your rights (Colombian Law 1581 of 2012)</h2>
+  <p>Under Colombian Law 1581 of 2012 and its regulations, you have the right to know, update, correct, and delete your personal data, to revoke your authorization, and to file complaints with the Superintendence of Industry and Commerce (SIC). Since Encode Labs Co does not store your data on its own systems, you can exercise most of these rights directly on your device (section 5). For any question or request, write to <a href="mailto:encodelabsco@gmail.com">encodelabsco@gmail.com</a>; we will respond within the time limits set by law.</p>
+
+  <h2>9. Changes to this policy</h2>
+  <p>If we change this policy, we will publish the new version at this same address with its effective date. If the change is significant, we will also announce it within the app.</p>
+
+  <h2>10. Contact</h2>
+  <p>Encode Labs Co · <a href="mailto:encodelabsco@gmail.com">encodelabsco@gmail.com</a></p>
+</article>
+
+<footer>© 2026 Encode Labs Co</footer>
+</main>
+</body>
+</html>
